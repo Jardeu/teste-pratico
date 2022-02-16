@@ -1,0 +1,54 @@
+body {
+    background-color: #0057B4;
+}
+
+.tags-field :where(li, li i){
+    display: flex;
+    align-items: center;
+}
+
+.tags-field ul {
+    flex-wrap: wrap;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 12px 0;
+}
+
+.tags-field ul li {
+    list-style: none;
+    margin: 4px 3px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    padding: 5px 8px 5px 10px;
+    border: 1px solid #e3d1e3;
+}
+
+.tags-field ul li i {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: #808080;
+    font-size: 12px;
+    margin-left: 8px;
+    border-radius: 50%;
+    background: #dfdfdf;
+    justify-content: center;
+}
+
+.tags-field ul input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.tags-field ul input:focus {
+    box-shadow: none;
+}
+
+.lista-produtos span {
+    padding: 8px;
+    margin-right: 5px;
+}
