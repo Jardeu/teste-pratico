@@ -15,5 +15,6 @@ Teste prático do Desafio Promobit
   ```
     docker-composer up -d
   ```
+- Acesse [``http://localhost:8001``](http://localhost:8001).
 
 ## SQL de extração de relatório de relevancia de produtos
