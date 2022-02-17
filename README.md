@@ -20,7 +20,7 @@ Teste prático do Desafio Promobit
 ## SQL de extração de relatório de relevancia de produtos
 
 ```sql
-SELECT t.name as tags, COUNT(pt.product_id) AS qtd 
+SELECT t.name AS tags, COUNT(pt.product_id) AS qtd 
 FROM tag t 
 INNER JOIN product_tag pt ON t.id = pt.tag_id
 GROUP BY t.name
