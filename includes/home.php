@@ -32,7 +32,7 @@ if (isset($_GET['status'])) {
                 Produtos</a>
         </div>
         <div>
-            <a class="btn btn-outline-light btn-lg" href="relatorio.php">Relatório de Relevãncia de Produtos</a>
+            <a class="btn btn-outline-light btn-lg" href="relatorio.php">Relatório de Relevância de Produtos</a>
         </div>
     </div>
 </div>
