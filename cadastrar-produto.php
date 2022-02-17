@@ -13,6 +13,7 @@ $obProdutoTag = new ProdutoTag;
 //PEGA AS TAGS PARA PREENCHER O AUTOCOMPLETE
 $tags = Tag::getTags();
 $nomes_tags = [];
+$nomes_values = '';
 
 //VALICAÇÃO DO POST
 if (isset($_POST['nome']) && isset($_POST['tags'])) {
@@ -54,7 +55,7 @@ if (isset($_POST['nome']) && isset($_POST['tags'])) {
         }
     }
 
-    header('location: listar-produto.php?status=success');
+    header('location: listar-produtos.php?status=success');
     exit;
 }
 

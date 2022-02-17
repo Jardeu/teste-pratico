@@ -3,7 +3,6 @@ const input = document.getElementById("tags");
 const names = document.getElementById("tagNames");
 
 let tags = (names.value != '') ? JSON.parse(names.value) : [];
-console.log(tags);
 
 function createTag() {
     ul.querySelectorAll("li").forEach(li => li.remove());

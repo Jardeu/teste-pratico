@@ -31,5 +31,8 @@ if (isset($_GET['status'])) {
             <a class="btn btn-outline-light btn-lg" href="listar-produtos.php">Lista de
                 Produtos</a>
         </div>
+        <div>
+            <a class="btn btn-outline-light btn-lg" href="relatorio.php">Relatório de Relevãncia de Produtos</a>
+        </div>
     </div>
 </div>

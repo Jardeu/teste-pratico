@@ -17,7 +17,7 @@ class Database
      * Nome do banco de dados
      * @var string
      */
-    const NAME = 'teste-pratico';
+    const NAME = 'teste_pratico';
 
     /**
      * Usuário do banco
@@ -161,5 +161,22 @@ class Database
 
         //RETORNA SUCESSO
         return true;
+    }
+
+    /**
+     * Método responsável por gerar o relatorio de relevancia
+     * @return PDOStatement
+     */
+    public function gerarRelatorio()
+    {
+        //MONTA A QUERY
+        $query = 'SELECT t.name as tags, COUNT(pt.product_id) AS qtd 
+        FROM tag t 
+        INNER JOIN product_tag pt ON t.id = pt.tag_id
+        GROUP BY t.name
+        ORDER BY qtd DESC';
+
+        //EXECUTA A QUERY
+        return $this->execute($query);
     }
 }

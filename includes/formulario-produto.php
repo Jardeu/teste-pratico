@@ -48,7 +48,7 @@ foreach ($nomes_tags as $nome) {
                                     </datalist>
                                 </ul>
                             </div>
-                            <input type="hidden" name="tagNames" id="tagNames" value="<?= ($nomes_values) ? $nomes_values : '' ?>">
+                            <input type="hidden" name="tagNames" id="tagNames" value="<?= $nomes_values ?>">
                             <button type="submit" class="btn btn-primary">Concluir</button>
                         </form>
                     </div>

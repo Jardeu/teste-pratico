@@ -15,10 +15,9 @@ services:
         restart: always
         ports: 
             - "3306:3306"
-        command: --default-authentication-plugin=mysql_native_password
         environment:
+            MYSQL_DATABASE: teste_pratico
             MYSQL_ROOT_PASSWORD: root 
-            MYSQL_DATABASE: teste-pratico
             MYSQL_USER: user
             MYSQL_PASSWORD: test
         volumes:

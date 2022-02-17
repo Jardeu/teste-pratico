@@ -86,4 +86,10 @@ class ProdutoTag
         return (new Database('product_tag'))->select('product_id = ' . $id_produto)
             ->fetchAll(PDO::FETCH_CLASS, self::class);
     }
+
+    public static function getRelatorio()
+    {
+        return (new Database())->gerarRelatorio()
+            ->fetchAll(PDO::FETCH_CLASS, self::class);
+    }
 }

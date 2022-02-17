@@ -1,10 +1,10 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-use \App\Entity\Tag;
+use \App\Entity\ProdutoTag;
 
-$tags = Tag::getTags(null, 'id');
+$relatorio = ProdutoTag::getRelatorio();
 
 include __DIR__ . '/includes/header.php';
-include __DIR__ . '/includes/listagem-tags.php';
+include __DIR__ . '/includes/relatorio.php';
 include __DIR__ . '/includes/footer.php';

@@ -13,7 +13,7 @@ if (isset($_POST['nome'])) {
 
     $obTag->cadastrar();
 
-    header('location: listar-tag.php?status=success');
+    header('location: listar-tags.php?status=success');
     exit;
 }
 
